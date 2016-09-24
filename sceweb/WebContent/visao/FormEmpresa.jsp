@@ -8,7 +8,7 @@
             label {
                 font: normal 12px courier !important;
             }
-</style>
+</style>	
 <title>Manter Empresa</title>
 <link rel="stylesheet" type="text/css" href="/sceweb/CSS/Formato.css">
 <script type="text/javascript" language="javascript">
@@ -26,8 +26,10 @@
 	}
 </script>
 </head>
-<body>
+<body class="container">
+	<div class="jumbotron">
 	<jsp:include page="Cabecalho.jsp" />
+	</div>
 	<div id="principal">
 		<div id="titulo">
 			<h3>Mantem Empresas</h3>
@@ -35,51 +37,51 @@
 		<hr>
 		<div id="formulario2">
 
-			<form name="formEmpresaIncluir" action="/sceweb/ServletControle" method="post">
+			<form name="formEmpresaIncluir" action="/sceweb/ServletControle" class="table-responsive" method="post">
 				<table id="tabcampos">
 					<tr>
 						<td><label> Nome:</label></td>
-						<td><input id="campo" size="70" type="text" name="txtNomeDaEmpresa"
+						<td><input id="campo" type="text" size="50" name="txtNomeDaEmpresa"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> CNPJ:</label></td>
-						<td><input id="campo" size="15" type="text" name="txtCNPJ"
+						<td><input id="campo"  type="text" name="txtCNPJ"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> Nome Fantasia:</label></td>
-						<td><input id="campo" size="70" type="text" name="txtNomeFantasia"
+						<td><input  id="campo" type="text" name="txtNomeFantasia"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> Endereço:</label></td>
-						<td><input id="campo" size="50" type="text" name="txtEndereco"
+						<td><input id="campo" type="text" name="txtEndereco"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> Telefone:</label></td>
-						<td><input id="campo" size="10" type="text" name="txtTelefone"
+						<td><input  id="campo" type="text" name="txtTelefone"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> Responsável pelo Estágio:</label></td>
-						<td><input id="campo" size="50" type="text" name="txtResponsavel"
+						<td><input id="campo" type="text" name="txtResponsavel"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> Telefone do Responsável pelo Estágio:</label></td>
-						<td><input id="campo" size="10" type="text" name="txtTelefoneResponsavel"
+						<td><input  id="campo" type="text" name="txtTelefoneResponsavel"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> Setor:</label></td>
-						<td><input id="campo" size="50" type="text" name="txtSetor"
+						<td><input id="campo" type="text" name="txtSetor"
 							value=""></td>
 					</tr>
 					<tr>
 						<td><label> e-mail:</label></td>
-						<td><input id="campo" size="30" type="text" name="txtEmail"
+						<td><input  id="campo" type="text" name="txtEmail"
 							value=""></td>
 					</tr>
 					
